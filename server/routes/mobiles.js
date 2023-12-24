@@ -29,6 +29,7 @@ router.get("/mobiles",async(req,res)=>{
         res.json({data:data}).status(200);
 
     } catch (error) {
+        console.error('Error fetching mobile data:', error);
         res.json({status:false,error}).status(500);
     }
 })
