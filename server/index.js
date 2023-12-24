@@ -13,7 +13,7 @@ app.use(cors({
 
 
 connectToMongoDB();
-app.use("/mobileapp",router);
+app.use("",router);
 app.listen(process.env.PORT,()=>{
     console.log('Server is running on PORT ${process.env.PORT');
 })
