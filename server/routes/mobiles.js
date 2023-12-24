@@ -23,8 +23,8 @@ router.get("/mobiles",async(req,res)=>{
         sort[sortBy] = order;
 
         // feching data
-        const data = await Mobile.find({ OS:{$in:os_type},price:{$lte:max_price.toString()}, type:{$in : device_type} , name:{$regex:`(?i)${search}`}}).sort(sort).collation({ locale: "en_US", numericOrdering: true });
-
+        // const data = await Mobile.find({ OS:{$in:os_type},price:{$lte:max_price.toString()}, type:{$in : device_type} , name:{$regex:`(?i)${search}`}}).sort(sort).collation({ locale: "en_US", numericOrdering: true });
+        const data = await Mobile.find({});
         // sending responce 
         res.json({data:data}).status(200);
 
