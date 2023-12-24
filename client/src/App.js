@@ -17,7 +17,7 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const url = `${process.env.REACT_APP_BACAKEND_API}?search=${search}&sortBy=${sortBy}&order=${order}&device=${device.join(',')}&os=${os.join(',')}&maxPrice=${maxPrice}`
+        const url = `${process.env.REACT_APP_BACAKEND_API}/mobiles?search=${search}&sortBy=${sortBy}&order=${order}&device=${device.join(',')}&os=${os.join(',')}&maxPrice=${maxPrice}`
         const response = await fetch(url,{
           method: "GET",
           headers: {
