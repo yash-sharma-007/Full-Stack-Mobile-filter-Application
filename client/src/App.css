@@ -9,11 +9,17 @@ body {
   text-align: center;
 }
 .container {
-  max-width: 800px;
+  max-width: 1000px;
   margin: 20px auto;
   padding: 20px;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.searchbar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .label {
@@ -21,10 +27,12 @@ body {
   margin-bottom: 8px;
 }
 
+.togglebtn{
+  width: 70px;
+}
 .input {
-  width: 100%;
-  padding: 8px;
-  margin-bottom: 16px;
+  width: 80%;
+  
 }
 
 .select {
@@ -37,7 +45,6 @@ body {
 
 .sort-container {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   margin-bottom: 16px;
 }
