@@ -21,7 +21,6 @@ router.get("/mobiles",async(req,res)=>{
         // Price or Memory in Ascending or Descending
         const sort ={}
         sort[sortBy] = order;
-        console.log(111);
         // feching data
         const data = await Mobile.find({ OS:{$in:os_type},price:{$lte:max_price.toString()}, type:{$in : device_type} , name:{$regex:`(?i)${search}`}}).sort(sort).collation({ locale: "en_US", numericOrdering: true });
         // const data = await Mobile.find({});
@@ -29,7 +28,6 @@ router.get("/mobiles",async(req,res)=>{
         res.json({data:data}).status(200);
 
     } catch (error) {
-        console.error('Error fetching mobile data:', error);
         res.json({status:false,error}).status(500);
     }
 })
