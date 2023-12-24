@@ -5,7 +5,12 @@ const router = require('./routes/mobiles')
 const app = express()
 const config = require("dotenv").config;
 config({ path: ".env" });
-app.use(cors());
+app.use(cors({
+  origin: 'https://mobile-full-stack-app-frontend.onrender.com/',
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  credentials: true,
+  optionsSuccessStatus: 204,
+}));
 
 
 connectToMongoDB();
