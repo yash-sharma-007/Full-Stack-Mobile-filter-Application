@@ -134,39 +134,47 @@ function App() {
               />
             </label>
         <div className='selectmulti'>
-          <label className="label">
-            Device Type:
-            <div className='multi'>
-              {device_type.map((element) => (
-                <label key={element} className="checkbox-label">
-                  <input
-                    type="checkbox"
-                    value={element}
-                    checked={device.includes(element)}
-                    onChange={handleDeviceTypeChange}
-                  />
-                  {element}
-                </label>
-              ))}
-            </div>
-          </label>
+        
+        <div>
+                <label className="label">
+                  <div className='multi'>
+                  Device Type:
+                    {device_type.map((element) => (
+                      <label key={element} className="checkbox-label">
+                        <input
+                          type="checkbox"
+                          value={element}
+                          checked={device.includes(element)}
+                          onChange={handleDeviceTypeChange}
+                        />
+                        {element}
+                      </label>
+                    ))}
 
-          <label className="label">
-            Operating System:
-            <div className='multi'>
-              {operating_system.map((element) => (
-                <label key={element} className="checkbox-label">
-                  <input
-                    type="checkbox"
-                    value={element}
-                    checked={os.includes(element)}
-                    onChange={handleOperatingSystemChange}
-                  />
-                  {element}
+
+                  </div>
                 </label>
-              ))}
-            </div>
-          </label>
+        </div>
+
+        <div>
+                  <label className="label">
+                    Operating System:
+                    <div className='multi'>
+                      {operating_system.map((element) => (
+                        <label key={element} className="checkbox-label">
+                          <input
+                            type="checkbox"
+                            value={element}
+                            checked={os.includes(element)}
+                            onChange={handleOperatingSystemChange}
+                          />
+                          {element}
+                        </label>
+                      ))}
+                    </div>
+                  </label>
+        </div>
+
         </div>
           </div>
         )}
@@ -197,3 +205,4 @@ function App() {
 }
 
 export default App;
+
