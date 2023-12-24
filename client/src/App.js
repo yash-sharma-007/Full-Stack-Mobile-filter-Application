@@ -9,7 +9,7 @@ function App() {
   const [sortBy, setSortBy] = useState('price');
   const [order, setOrder] = useState('Ascending');
   const [mobiles, setMobiles] = useState([]);
-  const [maxPrice, setMaxPrice] = useState(836476332);
+  const [maxPrice, setMaxPrice] = useState();
   const [device, setDevice] = useState([]);
   const [os, setOs] = useState([]);
   const [showFilters, setShowFilters] = useState(false);
@@ -129,7 +129,6 @@ function App() {
               <input
                 className="input"
                 type="number"
-                value={maxPrice}
                 onChange={handleMaxPriceChange}
               />
             </label>
