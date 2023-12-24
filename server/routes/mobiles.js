@@ -26,10 +26,10 @@ router.get("/mobiles",async(req,res)=>{
         const data = await Mobile.find({ OS:{$in:os_type},price:{$lte:max_price.toString()}, type:{$in : device_type} , name:{$regex:`(?i)${search}`}}).sort(sort).collation({ locale: "en_US", numericOrdering: true });
 
         // sending responce 
-        res.json({data:data})
+        res.json({data:data}).status(200);
 
     } catch (error) {
-        res.json({status:false,error});
+        res.json({status:false,error}).status(500);
     }
 })
 
