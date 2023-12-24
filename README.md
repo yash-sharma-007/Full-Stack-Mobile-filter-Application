@@ -49,7 +49,7 @@ cd ../client
 npm start
 ```
 
-### Access the application at ```bashhttp://localhost:3000/```
+### Access the application at [http://localhost:3000/](http://localhost:3000/)
 
 ### Create a .env file inside the client folder and add the following line
 ```bash
