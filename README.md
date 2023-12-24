@@ -57,7 +57,7 @@ REACT_APP_BACKEND_API=http://localhost:5000
 ```
 ### Create a .env file inside the server folder and add the following lines
 ```bash
-- DATABASE_URL=mongodb+srv://<username>:<password>@cluster0.0qepvhg.mongodb.net/Mobile_App
-- FRONTEND_URL=http://localhost:3000
-- PORT=5000
+DATABASE_URL=mongodb+srv://<username>:<password>@cluster0.0qepvhg.mongodb.net/Mobile_App
+FRONTEND_URL=http://localhost:3000
+PORT=5000
 ```
