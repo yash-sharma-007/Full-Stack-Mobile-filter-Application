@@ -5,6 +5,7 @@ The Full Stack Mobile Filter Application is a responsive web platform allowing u
 ## Getting Started
 
 ### Prerequisites
+- [React.js](https://reactjs.org/)
 - [Node.js](https://nodejs.org/)
 - [npm](https://www.npmjs.com/)
 - [MongoDB](https://www.mongodb.com/)
