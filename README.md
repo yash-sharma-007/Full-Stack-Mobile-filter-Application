@@ -2,6 +2,8 @@
 
 The Full Stack Mobile Filter Application is a responsive web platform allowing users to search, sort, and filter mobile devices. The frontend, built with React.js, interfaces with a Node.js and Express.js backend, using MongoDB for data storage. Users can refine results based on device type, operating system, price, and more.
 
+- [Preview](https://mobile-full-stack-app-frontend.onrender.com/)
+  
 ## Getting Started
 
 ### Prerequisites
