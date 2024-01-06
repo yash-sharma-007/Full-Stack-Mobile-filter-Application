@@ -64,3 +64,7 @@ DATABASE_URL=mongodb+srv://<username>:<password>@cluster0.0qepvhg.mongodb.net/Mo
 FRONTEND_URL=http://localhost:3000
 PORT=5000
 ```
+### Dataset
+```bash
+mobiles.json
+```
