@@ -66,5 +66,5 @@ PORT=5000
 ```
 ### Dataset
 ```bash
-mobiles.json
+https://github.com/yash-sharma-007/Full-Stack-Mobile-filter-Application/blob/ba8ac74a709f5f9b437093a37e9e78c5555da4e4/mobiles.json#L6
 ```
