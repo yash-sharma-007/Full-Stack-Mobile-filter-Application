@@ -93,7 +93,7 @@ function App() {
   return (
     <div className="container">
       <div className="container">
-        <h1 className='title'> Full stack Mobile Application </h1>
+        <h1 className='title'> Mobile Filter Application </h1>
         <div className='searchbar'>
           <label className="label">
             Search:
